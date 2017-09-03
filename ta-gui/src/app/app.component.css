@@ -12,13 +12,13 @@
   background-color: cyan;
   margin: .5em;
   padding: .3em 0;
-  height: 2em;
+  height: 1.6em;
   border-radius: 4px;
 }
 
 button {
   font-family: Arial;
-  background-color: #green;
+  background-color: lightgreen;
   border: none;
   padding: 5px 10px;
   border-radius: 4px;
@@ -26,5 +26,5 @@ button {
   cursor: hand;
 }
 button:hover {
-  background-color: #cfd8dc;
+  background-color: #963f5c;
 }
