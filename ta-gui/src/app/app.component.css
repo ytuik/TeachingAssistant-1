@@ -9,7 +9,7 @@
   cursor: pointer;
   position: relative;
   left: 0;
-  background-color: cyan;
+  background-color: peachpuff;
   margin: .5em;
   padding: .3em 0;
   height: 1.6em;
@@ -26,5 +26,5 @@ button {
   cursor: hand;
 }
 button:hover {
-  background-color: #963f5c;
+  background-color: lightpink;
 }

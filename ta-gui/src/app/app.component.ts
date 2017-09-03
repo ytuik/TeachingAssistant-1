@@ -10,8 +10,8 @@ import { AlunoService } from './aluno.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  constructor(private alunoService: AlunoService) {}
    aluno: Aluno = {nome: "", cpf: "", email: "", github:""};
-   alunoService = new AlunoService();
    title = 'ta-gui';
    alunos: Aluno[] = [];
    cpfduplicado: boolean = false;
