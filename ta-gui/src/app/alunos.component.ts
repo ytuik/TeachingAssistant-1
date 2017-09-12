@@ -8,12 +8,15 @@ import { AlunoService } from './aluno.service';
    styleUrls: ['./alunos.component.css']
  })
  export class AlunosComponent implements OnInit {
+<<<<<<< HEAD
     
     /* A inicialização dos atributos é feita logo após clicar 
        no botão Alunos. Para manter os valores digitados nos campos
        logo antes de clicar em Metas, estes valores teriam que ser 
        passados para o componente Metas, e depois repassados de volta 
        para este componente inicializar aluno com esses valores. 
+=======
+>>>>>>> 29e2397... servidor integrado ao cliente
 
        A renderização do HTML é feita após a alteração desses atributos
        através de um dos métodos abaixo, mas só após o término da 
@@ -25,6 +28,7 @@ import { AlunoService } from './aluno.service';
 
     constructor(private alunoService: AlunoService) {}
 
+<<<<<<< HEAD
     criarAluno(a: Aluno): void {
        /* Clone feito para que atraso na resposta da requisição
           não permita que alterações feitas no textfield após a
@@ -39,6 +43,11 @@ import { AlunoService } from './aluno.service';
         */  
        this.alunoService.criar(a.clone())
              .subscribe(
+=======
+     criarAluno(a: Aluno): void {
+       this.alunoService.criar(a)
+              .subscribe(
+>>>>>>> 29e2397... servidor integrado ao cliente
                 ar => {
                   if (ar) {
                     this.alunos.push(ar);
@@ -48,7 +57,11 @@ import { AlunoService } from './aluno.service';
                   } 
                 },
                 msg => { alert(msg.message); }
+<<<<<<< HEAD
               );    
+=======
+              );
+>>>>>>> 29e2397... servidor integrado ao cliente
     } 
 
     onMove(): void {
