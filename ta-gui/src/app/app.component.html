@@ -15,7 +15,7 @@
 </tr>
 <tr>
    <td><label>CPF </label></td>
-   <td><input [(ngModel)]="aluno.cpf" ></td>
+   <td><input type="number" [(ngModel)]="aluno.cpf" min = 0 ></td>
    <td *ngIf="cpfduplicado">
      Já existe um aluno com esse CPF
    </td>
@@ -35,6 +35,7 @@
    <th>Nome</th>
    <th>CPF</th>
    <th>e-mail</th>
+   <th>github</th>
    <th>Requisitos</th>
    <th>Gerência de Configuração</th>
 </tr>
@@ -42,6 +43,7 @@
    <td>{{a.nome}}</td>
    <td>{{a.cpf}}</td>
    <td>{{a.email}}</td>
+   <td>{{a.github}}</td>
    <td><input [(ngModel)]="a.metas['requisitos']" (change)="atualizarAluno(a)"></td>
    <td><input [(ngModel)]="a.metas['gerDeConfiguracao']" (change)="atualizarAluno(a)"></td>
 </tr>
