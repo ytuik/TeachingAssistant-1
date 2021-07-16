@@ -7,7 +7,7 @@ import { NgModule } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   aluno: Aluno = {nome: "", cpf: "", email: ""};
+   aluno: Aluno = {nome: "Insira o Nome", cpf: "Insira o CPF", email: "Insira um Email", github:"Insira um github"};
    title = 'ta-gui';
 }
 
@@ -15,4 +15,5 @@ export class Aluno {
   nome!: string;
   cpf!: string;
   email!: string;
+  github !: string;
 }
