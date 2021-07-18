@@ -4,7 +4,7 @@ export class CadastroDeAlunos {
    alunos: Aluno[] = [];
 
     criar(aluno: Aluno): Aluno {
-     var result = null;
+     var result: any = null;
      if (this.cpfNaoCadastrado(aluno.cpf)) {
        result = new Aluno();
        result.copyFrom(aluno);
